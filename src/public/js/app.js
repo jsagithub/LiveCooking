@@ -47370,63 +47370,81 @@ var staticRenderFns = [
             _c("div", { staticClass: "col" }, [
               _c("h3", [_vm._v("Old Fashioned Coconut Cream Pie")]),
               _vm._v(" "),
-              _c("div", { staticClass: "recipe-summary__stars" }, [
-                _c("div", { staticClass: "rating-stars" }, [
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                      alt: "Rated as 4.68 out of 5 Stars"
-                    }
-                  }),
+              _c(
+                "div",
+                { staticClass: "row", staticStyle: { "margin-top": "15px" } },
+                [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("img", {
+                      staticClass: "img-fluid rounded",
+                      staticStyle: { width: "50px" },
+                      attrs: {
+                        src:
+                          "http://institutomedios.com/wp-content/uploads/2015/01/perfil_de_ana_beatriz_barros_wallpaper-35255.jpg",
+                        alt: "Responsive image rounded"
+                      }
+                    })
+                  ]),
                   _vm._v(" "),
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                      alt: ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                      alt: ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                      alt: ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
-                      alt: ""
-                    }
-                  })
-                ])
-              ]),
+                  _c("div", { staticClass: "col" }, [
+                    _c("div", { staticClass: "rating-stars" }, [
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                          alt: "Rated as 4.68 out of 5 Stars"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                          alt: ""
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                          alt: ""
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                          alt: ""
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [_c("span", [_vm._v("Recipe by: Carol H.")])])
+                  ])
+                ]
+              ),
               _vm._v(" "),
               _c("div", [
-                _c("p", [_c("span", [_vm._v("Recipe by: Carol H.")])]),
-                _vm._v(" "),
                 _c("div", [
                   _vm._v(
                     '\n              "This is a tried-and-true, old-fashioned coconut cream pie. Took many years of searching and baking to find the right one and this is it! Enjoy!"        \n            '
@@ -47493,63 +47511,81 @@ var staticRenderFns = [
             _c("div", { staticClass: "col" }, [
               _c("h3", [_vm._v("Chicken Parmesan")]),
               _vm._v(" "),
-              _c("div", { staticClass: "recipe-summary__stars" }, [
-                _c("div", { staticClass: "rating-stars" }, [
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                      alt: "Rated as 4.68 out of 5 Stars"
-                    }
-                  }),
+              _c(
+                "div",
+                { staticClass: "row", staticStyle: { "margin-top": "15px" } },
+                [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("img", {
+                      staticClass: "img-fluid rounded",
+                      staticStyle: { width: "50px" },
+                      attrs: {
+                        src:
+                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA0kNPphN2Er21ILO8EUFPicIP5zEWYTlOq5ITnismHGB2z-3D7g",
+                        alt: "Responsive image rounded"
+                      }
+                    })
+                  ]),
                   _vm._v(" "),
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                      alt: ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                      alt: ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                      alt: ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("img", {
-                    attrs: {
-                      height: "20",
-                      width: "20",
-                      src:
-                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
-                      alt: ""
-                    }
-                  })
-                ])
-              ]),
+                  _c("div", { staticClass: "col" }, [
+                    _c("div", { staticClass: "rating-stars" }, [
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                          alt: "Rated as 4.68 out of 5 Stars"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                          alt: ""
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                          alt: ""
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                          alt: ""
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          height: "20",
+                          width: "20",
+                          src:
+                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [_c("span", [_vm._v("Recipe by: Chef John.")])])
+                  ])
+                ]
+              ),
               _vm._v(" "),
               _c("div", [
-                _c("p", [_c("span", [_vm._v("Recipe by: Chef John")])]),
-                _vm._v(" "),
                 _c("div", [
                   _vm._v(
                     '\n              "My version of chicken parmesan is a little different than what they do in the restaurants, with less sauce and a crispier crust."        \n            '
