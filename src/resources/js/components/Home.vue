@@ -1,8 +1,8 @@
 <template>
     <div>  
     <hr>
-    <section id="about">
-      <div class="container">
+    <div id="about">
+      <div class="container container-margin--top">
         <div class="row">
           <div class="col">
             <img style="max-width:400px;" class="rounded mx-auto d-block" src="https://images.media-allrecipes.com/userphotos/560x315/4899464.jpg" alt="Photo of Old Fashioned Coconut Cream Pie by Carol H.">
@@ -47,9 +47,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     
-    <section id="services" class="bg-light">
+    <div id="services" class="bg-light container-margin--top">
      <div class="container">
         <div class="row">
           <div class="col">
@@ -95,18 +95,6 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-   
+    </div>   
     </div>
 </template>
