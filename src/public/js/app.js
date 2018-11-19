@@ -47355,23 +47355,122 @@ var staticRenderFns = [
       _c("section", { attrs: { id: "about" } }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-lg-8 mx-auto" }, [
-              _c("h2", [_vm._v("About this page")]),
+            _c("div", { staticClass: "col" }, [
+              _c("img", {
+                staticClass: "rounded mx-auto d-block",
+                staticStyle: { "max-width": "400px" },
+                attrs: {
+                  src:
+                    "https://images.media-allrecipes.com/userphotos/560x315/4899464.jpg",
+                  alt: "Photo of Old Fashioned Coconut Cream Pie by Carol H."
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col" }, [
+              _c("h3", [_vm._v("Old Fashioned Coconut Cream Pie")]),
               _vm._v(" "),
-              _c("p", { staticClass: "lead" }, [
-                _vm._v(
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos."
-                )
+              _c("div", { staticClass: "recipe-summary__stars" }, [
+                _c("div", { staticClass: "rating-stars" }, [
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                      alt: "Rated as 4.68 out of 5 Stars"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                      alt: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                      alt: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                      alt: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                      alt: ""
+                    }
+                  })
+                ])
               ]),
               _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-primary",
-                  attrs: { href: "/videonotes", role: "button" }
-                },
-                [_vm._v("Try It")]
-              )
+              _c("div", [
+                _c("p", [_c("span", [_vm._v("Recipe by: Carol H.")])]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v(
+                    '\n              "This is a tried-and-true, old-fashioned coconut cream pie. Took many years of searching and baking to find the right one and this is it! Enjoy!"        \n            '
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticStyle: { "margin-top": "30px" } }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-danger",
+                      attrs: { type: "button" }
+                    },
+                    [
+                      _vm._v("\n                155\n                "),
+                      _c("i", { staticClass: "fas fa-video" })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" }
+                    },
+                    [
+                      _vm._v("\n                150 "),
+                      _c("i", { staticClass: "far fa-thumbs-up" })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" }
+                    },
+                    [
+                      _vm._v("\n                589 "),
+                      _c("i", { staticClass: "far fa-comments" })
+                    ]
+                  )
+                ])
+              ])
             ])
           ])
         ])
@@ -47380,13 +47479,120 @@ var staticRenderFns = [
       _c("section", { staticClass: "bg-light", attrs: { id: "services" } }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-lg-8 mx-auto" }, [
-              _c("h2", [_vm._v("Services we offer")]),
+            _c("div", { staticClass: "col" }, [
+              _c("img", {
+                staticClass: "rounded mx-auto d-block",
+                staticStyle: { "max-width": "400px" },
+                attrs: {
+                  src:
+                    "https://images.media-allrecipes.com/userphotos/560x315/4572704.jpg"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col" }, [
+              _c("h3", [_vm._v("Chicken Parmesan")]),
               _vm._v(" "),
-              _c("p", { staticClass: "lead" }, [
-                _vm._v(
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos."
-                )
+              _c("div", { staticClass: "recipe-summary__stars" }, [
+                _c("div", { staticClass: "rating-stars" }, [
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                      alt: "Rated as 4.68 out of 5 Stars"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                      alt: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                      alt: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                      alt: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    attrs: {
+                      height: "20",
+                      width: "20",
+                      src:
+                        "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", [
+                _c("p", [_c("span", [_vm._v("Recipe by: Chef John")])]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v(
+                    '\n              "My version of chicken parmesan is a little different than what they do in the restaurants, with less sauce and a crispier crust."        \n            '
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticStyle: { "margin-top": "30px" } }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-secondary",
+                      attrs: { type: "button" }
+                    },
+                    [
+                      _vm._v("\n               00:15:00\n                "),
+                      _c("i", { staticClass: "fas fa-video" })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" }
+                    },
+                    [
+                      _vm._v("\n                10 "),
+                      _c("i", { staticClass: "far fa-thumbs-up" })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" }
+                    },
+                    [
+                      _vm._v("\n                25 "),
+                      _c("i", { staticClass: "far fa-comments" })
+                    ]
+                  )
+                ])
               ])
             ])
           ])
