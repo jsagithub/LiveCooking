@@ -47867,7 +47867,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "py-5 bg-dark" }, [
+    return _c("footer", { staticClass: "py-5 bg-dark container-margin--top" }, [
       _c("div", { staticClass: "container" }, [
         _c("p", { staticClass: "m-0 text-center text-white" }, [
           _vm._v("Copyright © Your Website 2017")
