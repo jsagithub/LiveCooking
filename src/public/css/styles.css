@@ -15,3 +15,14 @@ header {
   .container-margin--top{
     margin-top: 100px;
   }
+
+  .no-decoration{
+    text-decoration: none; 
+    color: black;
+  }
+
+  .profile-img{
+    border-radius: 159px;
+    height: 159px;
+    width: 159px;
+  }

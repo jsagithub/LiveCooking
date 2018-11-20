@@ -402,110 +402,6 @@ module.exports = g;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-var utils = __webpack_require__(0);
-var normalizeHeaderName = __webpack_require__(22);
-
-var DEFAULT_CONTENT_TYPE = {
-  'Content-Type': 'application/x-www-form-urlencoded'
-};
-
-function setContentTypeIfUnset(headers, value) {
-  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
-    headers['Content-Type'] = value;
-  }
-}
-
-function getDefaultAdapter() {
-  var adapter;
-  if (typeof XMLHttpRequest !== 'undefined') {
-    // For browsers use XHR adapter
-    adapter = __webpack_require__(8);
-  } else if (typeof process !== 'undefined') {
-    // For node use HTTP adapter
-    adapter = __webpack_require__(8);
-  }
-  return adapter;
-}
-
-var defaults = {
-  adapter: getDefaultAdapter(),
-
-  transformRequest: [function transformRequest(data, headers) {
-    normalizeHeaderName(headers, 'Content-Type');
-    if (utils.isFormData(data) ||
-      utils.isArrayBuffer(data) ||
-      utils.isBuffer(data) ||
-      utils.isStream(data) ||
-      utils.isFile(data) ||
-      utils.isBlob(data)
-    ) {
-      return data;
-    }
-    if (utils.isArrayBufferView(data)) {
-      return data.buffer;
-    }
-    if (utils.isURLSearchParams(data)) {
-      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
-      return data.toString();
-    }
-    if (utils.isObject(data)) {
-      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
-      return JSON.stringify(data);
-    }
-    return data;
-  }],
-
-  transformResponse: [function transformResponse(data) {
-    /*eslint no-param-reassign:0*/
-    if (typeof data === 'string') {
-      try {
-        data = JSON.parse(data);
-      } catch (e) { /* Ignore */ }
-    }
-    return data;
-  }],
-
-  /**
-   * A timeout in milliseconds to abort a request. If set to 0 (default) a
-   * timeout is not created.
-   */
-  timeout: 0,
-
-  xsrfCookieName: 'XSRF-TOKEN',
-  xsrfHeaderName: 'X-XSRF-TOKEN',
-
-  maxContentLength: -1,
-
-  validateStatus: function validateStatus(status) {
-    return status >= 200 && status < 300;
-  }
-};
-
-defaults.headers = {
-  common: {
-    'Accept': 'application/json, text/plain, */*'
-  }
-};
-
-utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
-  defaults.headers[method] = {};
-});
-
-utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
-});
-
-module.exports = defaults;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -612,6 +508,110 @@ module.exports = function normalizeComponent (
   }
 }
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+var utils = __webpack_require__(0);
+var normalizeHeaderName = __webpack_require__(22);
+
+var DEFAULT_CONTENT_TYPE = {
+  'Content-Type': 'application/x-www-form-urlencoded'
+};
+
+function setContentTypeIfUnset(headers, value) {
+  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+    headers['Content-Type'] = value;
+  }
+}
+
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = __webpack_require__(8);
+  } else if (typeof process !== 'undefined') {
+    // For node use HTTP adapter
+    adapter = __webpack_require__(8);
+  }
+  return adapter;
+}
+
+var defaults = {
+  adapter: getDefaultAdapter(),
+
+  transformRequest: [function transformRequest(data, headers) {
+    normalizeHeaderName(headers, 'Content-Type');
+    if (utils.isFormData(data) ||
+      utils.isArrayBuffer(data) ||
+      utils.isBuffer(data) ||
+      utils.isStream(data) ||
+      utils.isFile(data) ||
+      utils.isBlob(data)
+    ) {
+      return data;
+    }
+    if (utils.isArrayBufferView(data)) {
+      return data.buffer;
+    }
+    if (utils.isURLSearchParams(data)) {
+      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+      return data.toString();
+    }
+    if (utils.isObject(data)) {
+      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+      return JSON.stringify(data);
+    }
+    return data;
+  }],
+
+  transformResponse: [function transformResponse(data) {
+    /*eslint no-param-reassign:0*/
+    if (typeof data === 'string') {
+      try {
+        data = JSON.parse(data);
+      } catch (e) { /* Ignore */ }
+    }
+    return data;
+  }],
+
+  /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+  maxContentLength: -1,
+
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300;
+  }
+};
+
+defaults.headers = {
+  common: {
+    'Accept': 'application/json, text/plain, */*'
+  }
+};
+
+utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+  defaults.headers[method] = {};
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+});
+
+module.exports = defaults;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
 /* 4 */
@@ -13990,7 +13990,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(46);
+module.exports = __webpack_require__(48);
 
 
 /***/ }),
@@ -14011,6 +14011,7 @@ window.Vue = __webpack_require__(37);
 Vue.component('home', __webpack_require__(40));
 Vue.component('navbar', __webpack_require__(42));
 Vue.component('bottombar', __webpack_require__(44));
+Vue.component('profile', __webpack_require__(46));
 
 var app = new Vue({
   el: '#app'
@@ -35186,7 +35187,7 @@ module.exports = __webpack_require__(19);
 var utils = __webpack_require__(0);
 var bind = __webpack_require__(6);
 var Axios = __webpack_require__(21);
-var defaults = __webpack_require__(2);
+var defaults = __webpack_require__(3);
 
 /**
  * Create an instance of Axios
@@ -35269,7 +35270,7 @@ function isSlowBuffer (obj) {
 "use strict";
 
 
-var defaults = __webpack_require__(2);
+var defaults = __webpack_require__(3);
 var utils = __webpack_require__(0);
 var InterceptorManager = __webpack_require__(30);
 var dispatchRequest = __webpack_require__(31);
@@ -35808,7 +35809,7 @@ module.exports = InterceptorManager;
 var utils = __webpack_require__(0);
 var transformData = __webpack_require__(32);
 var isCancel = __webpack_require__(10);
-var defaults = __webpack_require__(2);
+var defaults = __webpack_require__(3);
 var isAbsoluteURL = __webpack_require__(33);
 var combineURLs = __webpack_require__(34);
 
@@ -47292,7 +47293,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(3)
+var normalizeComponent = __webpack_require__(2)
 /* script */
 var __vue_script__ = null
 /* template */
@@ -47371,76 +47372,85 @@ var staticRenderFns = [
               _c("h3", [_vm._v("Old Fashioned Coconut Cream Pie")]),
               _vm._v(" "),
               _c(
-                "div",
-                { staticClass: "row", staticStyle: { "margin-top": "15px" } },
+                "a",
+                { staticClass: "no-decoration", attrs: { href: "/profile" } },
                 [
-                  _c("div", { staticClass: "col-2" }, [
-                    _c("img", {
-                      staticClass: "img-fluid rounded",
-                      staticStyle: { width: "50px" },
-                      attrs: {
-                        src:
-                          "http://institutomedios.com/wp-content/uploads/2015/01/perfil_de_ana_beatriz_barros_wallpaper-35255.jpg",
-                        alt: "Responsive image rounded"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col" }, [
-                    _c("div", { staticClass: "rating-stars" }, [
-                      _c("img", {
-                        attrs: {
-                          height: "20",
-                          width: "20",
-                          src:
-                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                          alt: "Rated as 4.68 out of 5 Stars"
-                        }
-                      }),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "row",
+                      staticStyle: { "margin-top": "15px" }
+                    },
+                    [
+                      _c("div", { staticClass: "col-2" }, [
+                        _c("img", {
+                          staticClass: "img-fluid rounded",
+                          staticStyle: { width: "50px" },
+                          attrs: {
+                            src:
+                              "http://institutomedios.com/wp-content/uploads/2015/01/perfil_de_ana_beatriz_barros_wallpaper-35255.jpg",
+                            alt: "Responsive image rounded"
+                          }
+                        })
+                      ]),
                       _vm._v(" "),
-                      _c("img", {
-                        attrs: {
-                          height: "20",
-                          width: "20",
-                          src:
-                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                          alt: ""
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("img", {
-                        attrs: {
-                          height: "20",
-                          width: "20",
-                          src:
-                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                          alt: ""
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("img", {
-                        attrs: {
-                          height: "20",
-                          width: "20",
-                          src:
-                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
-                          alt: ""
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("img", {
-                        attrs: {
-                          height: "20",
-                          width: "20",
-                          src:
-                            "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
-                          alt: ""
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [_c("span", [_vm._v("Recipe by: Carol H.")])])
-                  ])
+                      _c("div", { staticClass: "col" }, [
+                        _c("div", { staticClass: "rating-stars" }, [
+                          _c("img", {
+                            attrs: {
+                              height: "20",
+                              width: "20",
+                              src:
+                                "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                              alt: "Rated as 4.68 out of 5 Stars"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("img", {
+                            attrs: {
+                              height: "20",
+                              width: "20",
+                              src:
+                                "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                              alt: ""
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("img", {
+                            attrs: {
+                              height: "20",
+                              width: "20",
+                              src:
+                                "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                              alt: ""
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("img", {
+                            attrs: {
+                              height: "20",
+                              width: "20",
+                              src:
+                                "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                              alt: ""
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("img", {
+                            attrs: {
+                              height: "20",
+                              width: "20",
+                              src:
+                                "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                              alt: ""
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [_c("span", [_vm._v("Recipe by: Carol H.")])])
+                      ])
+                    ]
+                  )
                 ]
               ),
               _vm._v(" "),
@@ -47658,7 +47668,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(3)
+var normalizeComponent = __webpack_require__(2)
 /* script */
 var __vue_script__ = null
 /* template */
@@ -47810,7 +47820,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(3)
+var normalizeComponent = __webpack_require__(2)
 /* script */
 var __vue_script__ = null
 /* template */
@@ -47887,6 +47897,275 @@ if (false) {
 
 /***/ }),
 /* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(47)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/Profile.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3bd692e4", Component.options)
+  } else {
+    hotAPI.reload("data-v-3bd692e4", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container container-margin--top" }, [
+      _c("div", { staticClass: "card-group" }, [
+        _c("div", { staticClass: "card border-0" }, [
+          _c("img", {
+            staticClass: "mx-auto d-block card-img-top profile-img",
+            attrs: {
+              src:
+                "http://institutomedios.com/wp-content/uploads/2015/01/perfil_de_ana_beatriz_barros_wallpaper-35255.jpg"
+            }
+          }),
+          _vm._v(" "),
+          _c("h3", [
+            _vm._v("Prakash Prajapati"),
+            _c("br"),
+            _c("span", [_vm._v("Web Graphic Designer")])
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n                        tempor incididunt ut labore et."
+            )
+          ]),
+          _vm._v(" "),
+          _c("span", [
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", { staticClass: "fab fa-facebook-f" })
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", {
+                staticClass: "fab fa-twitter",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", {
+                staticClass: "fab fa-google-plus",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", {
+                staticClass: "fab fa-linkedin",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", {
+                staticClass: "fab fa-instagram",
+                attrs: { "aria-hidden": "true" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card" }, [
+          _c("img", {
+            staticClass: "card-img-top",
+            attrs: {
+              src:
+                "https://i0.wp.com/media.hungryforever.com/wp-content/uploads/2017/12/01041545/feature-image-gordon-ramsay-plane-food.jpg?ssl=1?w=356&strip=all&quality=80",
+              alt: "Card image cap"
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("h5", { staticClass: "card-title" }, [_vm._v("Card title")]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _vm._v(
+                "This card has supporting text below as a natural lead-in to additional content."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _c("small", { staticClass: "text-muted" }, [
+                _vm._v("Last updated 3 mins ago")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card" }, [
+          _c("img", {
+            staticClass: "card-img-top",
+            attrs: {
+              src:
+                "https://media4.s-nbcnews.com/j/newscms/2017_05/1192759/gordon-ramsay-baked-chicken-wings-tease-today-170203-01_77bec892f8b180a5b8a3f39624f900b8.today-inline-large.jpg",
+              alt: "Card image cap"
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("h5", { staticClass: "card-title" }, [_vm._v("Card title")]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _vm._v(
+                "This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _c("small", { staticClass: "text-muted" }, [
+                _vm._v("Last updated 3 mins ago")
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-group" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("img", {
+            staticClass: "card-img-top",
+            attrs: {
+              src:
+                "https://media-cdn.tripadvisor.com/media/photo-s/02/cf/fb/d8/opal-by-gordon-ramsay.jpg",
+              alt: "Card image cap"
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("h5", { staticClass: "card-title" }, [_vm._v("Card title")]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _vm._v(
+                "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _c("small", { staticClass: "text-muted" }, [
+                _vm._v("Last updated 3 mins ago")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card" }, [
+          _c("img", {
+            staticClass: "card-img-top",
+            attrs: {
+              src:
+                "http://freestyleforlifestyle.com/wp-content/uploads/2018/05/California-%E2%80%98fried%E2%80%99-chicken-sandwich.png",
+              alt: "Card image cap"
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("h5", { staticClass: "card-title" }, [_vm._v("Card title")]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _vm._v(
+                "This card has supporting text below as a natural lead-in to additional content."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _c("small", { staticClass: "text-muted" }, [
+                _vm._v("Last updated 3 mins ago")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card" }, [
+          _c("img", {
+            staticClass: "card-img-top",
+            attrs: {
+              src:
+                "https://ca.hellomagazine.com/imagenes/cuisine/2013060412910/delicious-recipes-from-gordon-ramsays-restaurants/0-66-245/YorkAlbany--a.jpg",
+              alt: "Card image cap"
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("h5", { staticClass: "card-title" }, [_vm._v("Card title")]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _vm._v(
+                "This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "card-text" }, [
+              _c("small", { staticClass: "text-muted" }, [
+                _vm._v("Last updated 3 mins ago")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3bd692e4", module.exports)
+  }
+}
+
+/***/ }),
+/* 48 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
