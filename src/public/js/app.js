@@ -14012,6 +14012,7 @@ Vue.component('home', __webpack_require__(40));
 Vue.component('navbar', __webpack_require__(42));
 Vue.component('bottombar', __webpack_require__(44));
 Vue.component('profile', __webpack_require__(46));
+Vue.component('recepie', __webpack_require__(53));
 
 var app = new Vue({
   el: '#app'
@@ -48068,35 +48069,44 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "card" }, [
-          _c("img", {
-            staticClass: "card-img-top",
-            attrs: {
-              src:
-                "https://i0.wp.com/media.hungryforever.com/wp-content/uploads/2017/12/01041545/feature-image-gordon-ramsay-plane-food.jpg?ssl=1?w=356&strip=all&quality=80",
-              alt: "Card image cap"
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _c("h5", { staticClass: "card-title" }, [_vm._v("Card title")]),
-            _vm._v(" "),
-            _c("p", { staticClass: "card-text" }, [
-              _vm._v(
-                "This card has supporting text below as a natural lead-in to additional content."
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "card-text" }, [
-              _c("small", { staticClass: "text-muted" }, [
-                _vm._v("Last updated 3 mins ago")
+          _c(
+            "a",
+            { staticClass: "no-decoration", attrs: { href: "/recepie" } },
+            [
+              _c("img", {
+                staticClass: "card-img-top",
+                attrs: {
+                  src:
+                    "https://i0.wp.com/media.hungryforever.com/wp-content/uploads/2017/12/01041545/feature-image-gordon-ramsay-plane-food.jpg?ssl=1?w=356&strip=all&quality=80",
+                  alt: "Card image cap"
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c("h5", { staticClass: "card-title" }, [_vm._v("Card title")]),
+                _vm._v(" "),
+                _c("p", { staticClass: "card-text" }, [
+                  _vm._v(
+                    "This card has supporting text below as a natural lead-in to additional content."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "card-text" }, [
+                  _c("small", { staticClass: "text-muted" }, [
+                    _vm._v("Last updated 3 mins ago")
+                  ])
+                ])
               ])
-            ])
-          ]),
+            ]
+          ),
           _vm._v(" "),
           _c("div", { staticClass: "card-footer text-muted mx-auto" }, [
             _c(
-              "button",
-              { staticClass: "btn btn-danger", attrs: { type: "button" } },
+              "a",
+              {
+                staticClass: "btn btn-danger",
+                attrs: { href: "/recepie", type: "button" }
+              },
               [
                 _vm._v("\n                155\n                "),
                 _c("i", { staticClass: "fas fa-video" })
@@ -48366,6 +48376,77 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(54)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/Recepie.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-938bdd08", Component.options)
+  } else {
+    hotAPI.reload("data-v-938bdd08", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [_vm._v("\n    recepie\n")])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-938bdd08", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

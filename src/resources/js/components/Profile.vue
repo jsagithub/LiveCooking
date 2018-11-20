@@ -24,18 +24,19 @@
                     </span>
             </div>
             <div class="card">
-                <img class="card-img-top" src="https://i0.wp.com/media.hungryforever.com/wp-content/uploads/2017/12/01041545/feature-image-gordon-ramsay-plane-food.jpg?ssl=1?w=356&strip=all&quality=80" alt="Card image cap">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                 
-                </div>
+                <a href="/recepie" class="no-decoration">
+                    <img class="card-img-top" src="https://i0.wp.com/media.hungryforever.com/wp-content/uploads/2017/12/01041545/feature-image-gordon-ramsay-plane-food.jpg?ssl=1?w=356&strip=all&quality=80" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>                    
+                    </div>
+                </a>
                 <div class="card-footer text-muted mx-auto">
-                  <button type="button" class="btn btn-danger">
+                  <a href="/recepie" type="button" class="btn btn-danger">
                     155
                     <i class="fas fa-video"></i>
-                  </button>
+                  </a>
                   <button type="button" class="btn btn-primary">
                     150 <i class="far fa-thumbs-up"></i>
                   </button>

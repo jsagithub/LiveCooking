@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+
+Route::get('/recepie', function () {
+    return view('recepie');
+});

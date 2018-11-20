@@ -13,6 +13,7 @@ Vue.component('home', require('./components/Home.vue'));
 Vue.component('navbar', require('./components/Navbar.vue'));
 Vue.component('bottombar', require('./components/Bottombar.vue'));
 Vue.component('profile', require('./components/Profile.vue'));
+Vue.component('recepie', require('./components/Recepie.vue'));
 
 const app = new Vue({
     el: '#app'
