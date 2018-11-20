@@ -29,6 +29,19 @@
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                 
+                </div>
+                <div class="card-footer text-muted mx-auto">
+                  <button type="button" class="btn btn-danger">
+                    155
+                    <i class="fas fa-video"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    150 <i class="far fa-thumbs-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    589 <i class="far fa-comments"></i>
+                  </button>
                 </div>
             </div>
             <div class="card">
@@ -37,6 +50,19 @@
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                
+                </div>
+                <div class="card-footer text-muted mx-auto">
+                  <button type="button" class="btn btn-danger">
+                    155
+                    <i class="fas fa-video"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    150 <i class="far fa-thumbs-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    589 <i class="far fa-comments"></i>
+                  </button>
                 </div>
             </div>
         </div>
@@ -47,6 +73,19 @@
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                 
+                </div>
+                <div class="card-footer text-muted mx-auto">
+                  <button type="button" class="btn btn-danger">
+                    155
+                    <i class="fas fa-video"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    150 <i class="far fa-thumbs-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    589 <i class="far fa-comments"></i>
+                  </button>
                 </div>
             </div>
             <div class="card">
@@ -55,6 +94,19 @@
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                 
+                </div>
+                <div class="card-footer text-muted mx-auto">
+                  <button type="button" class="btn btn-danger">
+                    155
+                    <i class="fas fa-video"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    150 <i class="far fa-thumbs-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    589 <i class="far fa-comments"></i>
+                  </button>
                 </div>
             </div>
             <div class="card">
@@ -63,6 +115,19 @@
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                
+                </div>
+                <div class="card-footer text-muted mx-auto">
+                  <button type="button" class="btn btn-danger">
+                    155
+                    <i class="fas fa-video"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    150 <i class="far fa-thumbs-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    589 <i class="far fa-comments"></i>
+                  </button>
                 </div>
             </div>
         </div>

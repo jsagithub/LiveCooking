@@ -48091,6 +48091,35 @@ var staticRenderFns = [
                 _vm._v("Last updated 3 mins ago")
               ])
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-footer text-muted mx-auto" }, [
+            _c(
+              "button",
+              { staticClass: "btn btn-danger", attrs: { type: "button" } },
+              [
+                _vm._v("\n                155\n                "),
+                _c("i", { staticClass: "fas fa-video" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                150 "),
+                _c("i", { staticClass: "far fa-thumbs-up" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                589 "),
+                _c("i", { staticClass: "far fa-comments" })
+              ]
+            )
           ])
         ]),
         _vm._v(" "),
@@ -48118,6 +48147,35 @@ var staticRenderFns = [
                 _vm._v("Last updated 3 mins ago")
               ])
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-footer text-muted mx-auto" }, [
+            _c(
+              "button",
+              { staticClass: "btn btn-danger", attrs: { type: "button" } },
+              [
+                _vm._v("\n                155\n                "),
+                _c("i", { staticClass: "fas fa-video" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                150 "),
+                _c("i", { staticClass: "far fa-thumbs-up" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                589 "),
+                _c("i", { staticClass: "far fa-comments" })
+              ]
+            )
           ])
         ])
       ]),
@@ -48147,6 +48205,35 @@ var staticRenderFns = [
                 _vm._v("Last updated 3 mins ago")
               ])
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-footer text-muted mx-auto" }, [
+            _c(
+              "button",
+              { staticClass: "btn btn-danger", attrs: { type: "button" } },
+              [
+                _vm._v("\n                155\n                "),
+                _c("i", { staticClass: "fas fa-video" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                150 "),
+                _c("i", { staticClass: "far fa-thumbs-up" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                589 "),
+                _c("i", { staticClass: "far fa-comments" })
+              ]
+            )
           ])
         ]),
         _vm._v(" "),
@@ -48174,6 +48261,35 @@ var staticRenderFns = [
                 _vm._v("Last updated 3 mins ago")
               ])
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-footer text-muted mx-auto" }, [
+            _c(
+              "button",
+              { staticClass: "btn btn-danger", attrs: { type: "button" } },
+              [
+                _vm._v("\n                155\n                "),
+                _c("i", { staticClass: "fas fa-video" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                150 "),
+                _c("i", { staticClass: "far fa-thumbs-up" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                589 "),
+                _c("i", { staticClass: "far fa-comments" })
+              ]
+            )
           ])
         ]),
         _vm._v(" "),
@@ -48201,6 +48317,35 @@ var staticRenderFns = [
                 _vm._v("Last updated 3 mins ago")
               ])
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-footer text-muted mx-auto" }, [
+            _c(
+              "button",
+              { staticClass: "btn btn-danger", attrs: { type: "button" } },
+              [
+                _vm._v("\n                155\n                "),
+                _c("i", { staticClass: "fas fa-video" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                150 "),
+                _c("i", { staticClass: "far fa-thumbs-up" })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "button" } },
+              [
+                _vm._v("\n                589 "),
+                _c("i", { staticClass: "far fa-comments" })
+              ]
+            )
           ])
         ])
       ])
