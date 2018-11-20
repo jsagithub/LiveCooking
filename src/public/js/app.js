@@ -47980,6 +47980,58 @@ var staticRenderFns = [
             )
           ]),
           _vm._v(" "),
+          _c("div", { staticClass: "rating-stars mx-auto d-block" }, [
+            _c("img", {
+              attrs: {
+                height: "20",
+                width: "20",
+                src:
+                  "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                alt: "Rated as 4.68 out of 5 Stars"
+              }
+            }),
+            _vm._v(" "),
+            _c("img", {
+              attrs: {
+                height: "20",
+                width: "20",
+                src:
+                  "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                alt: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("img", {
+              attrs: {
+                height: "20",
+                width: "20",
+                src:
+                  "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                alt: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("img", {
+              attrs: {
+                height: "20",
+                width: "20",
+                src:
+                  "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                alt: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("img", {
+              attrs: {
+                height: "20",
+                width: "20",
+                src:
+                  "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                alt: ""
+              }
+            })
+          ]),
+          _vm._v(" "),
           _c("span", [
             _c("a", { attrs: { href: "#" } }, [
               _c("i", { staticClass: "fab fa-facebook-f" })

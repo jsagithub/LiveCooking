@@ -7,6 +7,14 @@
                     <h3>Prakash Prajapati<br><span>Web Graphic Designer</span></h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et.</p>
+                   <!--rating stars-->
+                  <div class="rating-stars mx-auto d-block">
+                          <img height="20" width="20" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="Rated as 4.68 out of 5 Stars">
+                          <img height="20" width="20" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+                          <img height="20" width="20" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+                          <img height="20" width="20" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg" alt="">
+                          <img height="20" width="20" src="https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg" alt="">
+                  </div>  
                     <span>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
                       <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
