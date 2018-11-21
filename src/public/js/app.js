@@ -13990,7 +13990,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(48);
+module.exports = __webpack_require__(50);
 
 
 /***/ }),
@@ -14012,7 +14012,7 @@ Vue.component('home', __webpack_require__(40));
 Vue.component('navbar', __webpack_require__(42));
 Vue.component('bottombar', __webpack_require__(44));
 Vue.component('profile', __webpack_require__(46));
-Vue.component('recepie', __webpack_require__(53));
+Vue.component('recepie', __webpack_require__(48));
 
 var app = new Vue({
   el: '#app'
@@ -48373,16 +48373,6 @@ if (false) {
 
 /***/ }),
 /* 48 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -48390,7 +48380,7 @@ var normalizeComponent = __webpack_require__(2)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(54)
+var __vue_template__ = __webpack_require__(49)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48429,16 +48419,369 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 54 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    recepie\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container container-margin--top" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-2" }, [
+          _c("h3", [_vm._v("Streamers")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("img", {
+                staticStyle: { width: "250px", "max-height": "150px" },
+                attrs: {
+                  src:
+                    "https://indianaffiliateprograms.com/wp-content/uploads/2017/12/Using-Videos-Affiliate-Marketing.jpg"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row mx-auto" }, [
+              _c("img", {
+                staticClass: "card-img-top profile-img",
+                staticStyle: { width: "50px", "max-height": "50px" },
+                attrs: {
+                  src:
+                    "http://institutomedios.com/wp-content/uploads/2015/01/perfil_de_ana_beatriz_barros_wallpaper-35255.jpg"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticStyle: { "margin-top": "15px", "margin-left": "10px" }
+                },
+                [_vm._v("Prakash Prajapati")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row mx-auto d-block" }, [
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: "Rated as 4.68 out of 5 Stars"
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                  alt: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("img", {
+                staticStyle: { width: "250px", "max-height": "150px" },
+                attrs: {
+                  src:
+                    "https://indianaffiliateprograms.com/wp-content/uploads/2017/12/Using-Videos-Affiliate-Marketing.jpg"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row mx-auto" }, [
+              _c("img", {
+                staticClass: "card-img-top profile-img",
+                staticStyle: { width: "50px", "max-height": "50px" },
+                attrs: {
+                  src:
+                    "http://institutomedios.com/wp-content/uploads/2015/01/perfil_de_ana_beatriz_barros_wallpaper-35255.jpg"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticStyle: { "margin-top": "15px", "margin-left": "10px" }
+                },
+                [_vm._v("Prakash Prajapati")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row mx-auto d-block" }, [
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: "Rated as 4.68 out of 5 Stars"
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                  alt: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("img", {
+                staticStyle: { width: "250px", "max-height": "150px" },
+                attrs: {
+                  src:
+                    "https://indianaffiliateprograms.com/wp-content/uploads/2017/12/Using-Videos-Affiliate-Marketing.jpg"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row mx-auto" }, [
+              _c("img", {
+                staticClass: "card-img-top profile-img",
+                staticStyle: { width: "50px", "max-height": "50px" },
+                attrs: {
+                  src:
+                    "http://institutomedios.com/wp-content/uploads/2015/01/perfil_de_ana_beatriz_barros_wallpaper-35255.jpg"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticStyle: { "margin-top": "15px", "margin-left": "10px" }
+                },
+                [_vm._v("Prakash Prajapati")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row mx-auto d-block" }, [
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: "Rated as 4.68 out of 5 Stars"
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                  alt: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("img", {
+                staticStyle: { width: "250px", "max-height": "150px" },
+                attrs: {
+                  src:
+                    "https://indianaffiliateprograms.com/wp-content/uploads/2017/12/Using-Videos-Affiliate-Marketing.jpg"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row mx-auto" }, [
+              _c("img", {
+                staticClass: "card-img-top profile-img",
+                staticStyle: { width: "50px", "max-height": "50px" },
+                attrs: {
+                  src:
+                    "http://institutomedios.com/wp-content/uploads/2015/01/perfil_de_ana_beatriz_barros_wallpaper-35255.jpg"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  staticStyle: { "margin-top": "15px", "margin-left": "10px" }
+                },
+                [_vm._v("Prakash Prajapati")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row mx-auto d-block" }, [
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: "Rated as 4.68 out of 5 Stars"
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  height: "20",
+                  width: "20",
+                  src:
+                    "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                  alt: ""
+                }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _vm._v("\n        Stream and chat\n        ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _vm._v("\n        Recepie\n        ")
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -48447,6 +48790,12 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-938bdd08", module.exports)
   }
 }
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
