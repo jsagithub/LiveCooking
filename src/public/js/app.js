@@ -48772,11 +48772,165 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col" }, [
-          _vm._v("\n        Stream and chat\n        ")
+          _c("h3", [_vm._v("Stream")]),
+          _vm._v(" "),
+          _c("object", {
+            attrs: {
+              width: "100%",
+              height: "315",
+              data: "https://www.youtube.com/v/sSDwzS3nyis"
+            }
+          }),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col profile--gray-content profile--scroll-content"
+            },
+            [
+              _c("h4", [_vm._v("Comments:")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "profile--info" }, [
+                _c("h4", { staticClass: "card-title" }, [
+                  _c("img", {
+                    staticClass: "img-fluid rounded",
+                    staticStyle: { width: "50px" },
+                    attrs: {
+                      src:
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA0kNPphN2Er21ILO8EUFPicIP5zEWYTlOq5ITnismHGB2z-3D7g",
+                      alt: "Responsive image rounded"
+                    }
+                  }),
+                  _vm._v(
+                    " \n                        John Travols \n                        "
+                  ),
+                  _c("a", { staticStyle: { "font-size": "15px" } }, [
+                    _vm._v(
+                      "Laudantium veniam exercitationem expedita laborum at voluptate."
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "input-group mb-3" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    placeholder: "Write a message",
+                    "aria-label": "Write a message",
+                    "aria-describedby": "button-addon2"
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group-append" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-outline-secondary",
+                      attrs: { type: "button", id: "button-addon2" }
+                    },
+                    [_vm._v("Comment")]
+                  )
+                ])
+              ])
+            ]
+          )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col" }, [
-          _vm._v("\n        Recepie\n        ")
+        _c("div", { staticClass: "col-3" }, [
+          _c("h3", [_vm._v("Recepie")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card", staticStyle: { width: "18rem" } }, [
+            _c("img", {
+              staticClass: "card-img-top",
+              attrs: {
+                src:
+                  "https://i0.wp.com/media.hungryforever.com/wp-content/uploads/2017/12/01041545/feature-image-gordon-ramsay-plane-food.jpg",
+                alt: "Card image cap"
+              }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("h5", { staticClass: "card-title" }, [_vm._v("Card title")]),
+              _vm._v(" "),
+              _c("p", { staticClass: "card-text" }, [
+                _vm._v(
+                  "Some quick example text to build on the card title and make up the bulk of the card's content."
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "list-group list-group-flush" }, [
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Ingredient X")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Ingredient X")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Ingredient X")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "row mx-auto d-block" }, [
+                _c("img", {
+                  attrs: {
+                    height: "20",
+                    width: "20",
+                    src:
+                      "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                    alt: "Rated as 4.68 out of 5 Stars"
+                  }
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  attrs: {
+                    height: "20",
+                    width: "20",
+                    src:
+                      "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  attrs: {
+                    height: "20",
+                    width: "20",
+                    src:
+                      "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  attrs: {
+                    height: "20",
+                    width: "20",
+                    src:
+                      "https://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  attrs: {
+                    height: "20",
+                    width: "20",
+                    src:
+                      "https://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg",
+                    alt: ""
+                  }
+                })
+              ])
+            ])
+          ])
         ])
       ])
     ])
