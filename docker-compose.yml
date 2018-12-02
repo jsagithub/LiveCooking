@@ -11,6 +11,7 @@ services:
       volumes:
         - .:/application
       environment:
+        - TERM=xterm
         - MYSQL_ROOT_PASSWORD=root
         - MYSQL_DATABASE=livecooking
         - MYSQL_USER=root
