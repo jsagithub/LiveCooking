@@ -21,3 +21,9 @@ Route::post('register', 'UserController@register');
 Route::group(['middleware' => 'auth:api'], function(){
 Route::post('details', 'UserController@details');
 });
+//Recepie
+Route::get('recepies', 'RecepiesController@index');
+Route::get('recepies/{id}', 'RecepiesController@show');
+Route::post('recepies', 'RecepiesController@store');
+Route::put('recepies', 'RecepiesController@store'); 
+Route::delete('recepies/{id}', 'RecepiesController@destroy');
