@@ -13,7 +13,7 @@ class CreateRecepieTable extends Migration
      */
     public function up()
     {
-        Schema::create('recepie', function (Blueprint $table) {
+        Schema::create('recepies', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_user')->unsigned();
             $table->foreign('id_user')
@@ -35,6 +35,6 @@ class CreateRecepieTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('recepie');
+        Schema::dropIfExists('recepies');
     }
 }

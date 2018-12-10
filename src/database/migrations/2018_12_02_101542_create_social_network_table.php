@@ -13,7 +13,7 @@ class CreateSocialNetworkTable extends Migration
      */
     public function up()
     {
-        Schema::create('social_network', function (Blueprint $table) {
+        Schema::create('social_networks', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_user')->unsigned();
             $table->foreign('id_user')
@@ -31,6 +31,6 @@ class CreateSocialNetworkTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('social_network');
+        Schema::dropIfExists('social_networks');
     }
 }
