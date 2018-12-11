@@ -45,3 +45,9 @@ Route::get('social/{id}', 'SocialNetworksController@show');
 Route::post('social', 'SocialNetworksController@store');
 Route::put('social', 'SocialNetworksController@store');
 Route::delete('social/{id}', 'SocialNetworksController@destroy');
+//Streams
+Route::get('streams', 'StreamsController@index');
+Route::get('streams/{id}', 'StreamsController@show');
+Route::post('streams', 'StreamsController@store');
+Route::put('streams', 'StreamsController@store');
+Route::delete('streams/{id}', 'StreamsController@destroy');
